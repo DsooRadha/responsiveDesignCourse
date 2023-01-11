@@ -1,0 +1,24 @@
+{
+  "name": "responsivedesigncourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DsooRadha/responsiveDesignCourse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DsooRadha/responsiveDesignCourse/issues"
+  },
+  "homepage": "https://github.com/DsooRadha/responsiveDesignCourse#readme",
+  "dependencies": {
+    "serve": "^14.1.2"
+  }
+}
