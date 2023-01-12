@@ -1,10 +1,10 @@
 :root {
   --bitcoin-green: #118437;
-  --soft-orange: #ffe9d5;
+  --soft-blue: #b7eefb;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
-  --warm-black: #282623;
-  --black: #201e1c;
+  --warm-black: #20342f;
+  --blackGreen: #1c231c;
   --off-white: #faf8f7;
   --just-white: #fff;
   --grey: #bababa;
@@ -31,7 +31,7 @@ header {
   height: 334px;
   text-align: center;
   background: linear-gradient(208.83deg,
-      var(--black) 16.69%,
+      var(--blackGreen) 16.69%,
       var(--bitcoin-green) 100%);
 }
 
@@ -75,7 +75,7 @@ header img {
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  color: var(--black);
+  color: var(--blackGreen);
 }
 
 .header--title-container .header--button span {
@@ -126,7 +126,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: var(--black);
+  color: var(--blackGreen);
 }
 
 .main-exchange-container p {
@@ -137,157 +137,61 @@ main {
   color: #757575;
 }
 
-
 .images-container {
-  border: 5px solid #e1bee7;
-  background-color: white;
+  background-color: rgb(5, 44, 34);
   display: grid;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 100px 100px 100px;
   grid-template-rows: 75px 75px 75px 75px;
+  gap: 2px;
   place-content: center;
-  grid-template-areas: 
-  "header header header"
-  "side main main"
-  "side main main"
-  "section section logo";
+  grid-template-areas:
+    "header header header"
+    "side main main"
+    "side main main"
+    "section section logo";
 }
 
 .images-container .item-1 {
   background-image: url('https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: header;
 }
+
 .images-container .item-2 {
- background-image: url('https://images.pexels.com/photos/5400091/pexels-photo-5400091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://images.pexels.com/photos/5400091/pexels-photo-5400091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: side;
 }
+
 .images-container .item-3 {
   background-image: url('https://freefromharm.org/wp-content/uploads/2014/02/Free-from-Harm-new-Why-Vegan-featured-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: main;
 }
+
 .images-container .item-4 {
- background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF7WdC1TiBDSxjXZB5cDzZUShluxy850jXmA&usqp=CAU');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF7WdC1TiBDSxjXZB5cDzZUShluxy850jXmA&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: section;
 }
+
 .images-container .item-5 {
-background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-3669638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-3669638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: logo;
 }
-.main-currency-table,
-.main-commissions-table {
-  width: 70%;
-  min-width: 235px;
-  max-width: 500px;
-  height: 360px;
-  margin: 0 auto;
 
-  font-family: "Inter", sans-serif;
-}
-
-.main-currency-table .currency-table--title {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 2.3rem;
-  color: var(--bitcoin-green);
-}
-
-.main-commissions-table .commissions-table--title {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 2.3rem;
-  color: var(--secondary-blue);
-}
-
-.currency-table--container,
-.commissions-table--container {
-  width: 90%;
-  min-width: 230px;
-  max-width: 300px;
-  height: 250px;
-  margin: 0 auto;
-  /* background-color: #fff; */
-  border-radius: 15px;
-}
-
-.currency-table--container table,
-.commissions-table--container table {
-  width: 100%;
-  height: 100%;
-}
-
-.currency-table--container td,
-.commissions-table--container td {
-  width: 50%;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.9rem;
-  color: var(--grey);
-  /* border-bottom: 1px solid #faf8f7; */
-  background-color: var(--just-white);
-}
-
-.currency-table--container .table__top-left,
-.commissions-table--container .table__top-left {
-  border-radius: 15px 0 0 0;
-}
-
-.currency-table--container .table__top-right,
-.commissions-table--container .table__top-right {
-  border-radius: 0 15px 0 0;
-}
-
-.currency-table--container .table__bottom-left,
-.commissions-table--container .table__bottom-left {
-  border-radius: 0 0 0 15px;
-}
-
-.currency-table--container .table__bottom-right,
-.commissions-table--container .table__bottom-right {
-  border-radius: 0 0 15px 0;
-}
-
-.currency-table--container .table__right,
-.commissions-table--container .table__right {
-  font-size: 1.4rem;
-  font-weight: normal;
-  line-height: 1.7rem;
-  color: #757575;
-}
-
-.currency-table--container .up {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-left: 10px;
-  background-image: url("../assets/icons/trending-up.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.currency-table--container .down {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-left: 10px;
-  background-image: url("../assets/icons/trending-down.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.currency-table--date {
-  width: 190px;
-  height: 31px;
-  margin: 0 auto;
-  margin-top: 15px;
-  padding: 8px;
-  background-color: var(--soft-orange);
-  border-radius: 8px;
-}
-
-.commissions-table--date {
+.message {
   width: 190px;
   height: 31px;
   margin: 0 auto;
@@ -297,29 +201,25 @@ background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-366
   border-radius: 8px;
 }
 
-.currency-table--date p,
-.commissions-table--date p {
-  margin: 7px;
-  font-size: 1.2rem;
-  line-height: 1.5px;
-}
-
 .main-product-detail {
   position: relative;
   width: 100%;
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: var(--black);
+  background-color: var(--blackGreen);
 }
 
-.product-detail--batata-logo {
+.product-detail--lief-logo {
   position: absolute;
-  width: 40.57px;
-  height: 24.01px;
-  left: calc(50% - 20px);
-  top: -10px;
-  background-image: url("../assets/icons/batata.svg");
+  width: 70px;
+  height: 40px;
+  left: calc(50% - 70px / 2);
+  top: -22px;
+  background-image: url("../assets/icons/lief.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .product-detail--title {
@@ -327,84 +227,29 @@ background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-366
   min-width: 288px;
   height: auto;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 25px;
   text-align: center;
 }
 
 .product-detail--title h2 {
   margin-bottom: 20px;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
 }
 
-.product-detail--title p {
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
-}
-
 .product-detail--card {
   width: 90%;
-  min-width: 288px;
-  max-width: 400px;
-  height: 152px;
+  min-width: 280px;
+  max-width: 500px;
+  height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--warm-black);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 8px rgba(12, 43, 27, 0.16);
   border-radius: 4px;
-}
-
-.product-detail--card .clock {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  background-image: url("../assets/icons/clock.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product-detail--card .eye {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  background-image: url("../assets/icons/eye.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product-detail--card .dollar {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  background-image: url("../assets/icons/dollar-sign.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product-detail--card .check {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  background-image: url("../assets/icons/check-circle.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  align-items: center;
 }
 
 .product--card_title {
@@ -426,7 +271,7 @@ background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-366
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+  background-image: url("https://lapeste.org/wp-content/uploads/2017/01/13612336_1161110600576472_404657703286992905_n1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -453,7 +298,7 @@ background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-366
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: var(--black);
+  color: var(--blackGreen);
 }
 
 .main-plans-container p {
@@ -530,7 +375,7 @@ background-image: url('https://images.pexels.com/photos/3669638/pexels-photo-366
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.8rem;
-  color: var(--black);
+  color: var(--blackGreen);
 }
 
 .plan-card--ca span {
