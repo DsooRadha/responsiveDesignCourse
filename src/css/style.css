@@ -1,5 +1,5 @@
 :root {
-  --bitcoin-green: #118437;
+  --firts-green: #118437;
   --soft-blue: #b7eefb;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -32,7 +32,7 @@ header {
   text-align: center;
   background: linear-gradient(208.83deg,
       var(--blackGreen) 16.69%,
-      var(--bitcoin-green) 100%);
+      var(--firts-green) 100%);
 }
 
 header img {
@@ -267,7 +267,7 @@ main {
   color: #808080;
 }
 
-.bitcoin-img-container {
+.vegan-img-container {
   width: 100%;
   min-width: 320px;
   height: 50vh;
@@ -275,122 +275,113 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   text-align: center;
 }
 
-.bitcoin-img-container h2 {
-  padding-top: 60px;
+.vegan-img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.85;
+  left: 0%;
+  background-color: #3a7c9d;
+}
+
+.vegan-img-container h2 {
+  width: 250px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
+  position: absolute;
+  left: calc(50% - 250px / 2);
+  bottom: 20px;
+  margin: auto;
+
 }
 
-.main-plans-container {
+.main-lawRose-container {
   width: 100%;
   min-height: 320px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
-.main-plans-container h2 {
-  padding-top: 50px;
-  font-size: 2.4rem;
+.main-lawRose-container h2 {
+  padding-top: 30px;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--blackGreen);
 }
 
-.main-plans-container p {
-  padding-top: 30px;
-  font-size: 1.4rem;
+.main-lawRose-container p {
+  padding: 20px 10px;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #757575;
+
 }
 
-.plans-container--slider {
+.lawRose-container--slider {
   display: flex;
-  /* gap: 50px; Aun no está soportado por todos los navegadores :( */
   height: 316px;
   overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
+  /* overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity; */
+ align-items: center;
 }
 
-.plans-container--card {
+.lawRose-container--card {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px 30px 0;
-  padding: 0 15px;
+  margin: 0px 30px 0;
+  padding: 35px 15px;
   background-color: var(--just-white);
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.plans-container--card .recommended {
+.lawRose--card-button{
+  width: 200px;
+  height: 38px;
+  background-color: var(--soft-blue);
+  padding: 1vh;
+  border-radius: 1vh;
+  border: none;
+  box-shadow:0px 4px 8px rgba(7, 39, 45, 0.567);
+  position: absolute;
+  left: calc(50% - 200px / 2);
+  bottom: calc(20% - 38px / 2); ;
+  font-weight: bolder;
+}
+
+.lawRose-container--card .recommended {
+  display: flex;
   position: absolute;
   width: 120px;
-  height: 31px;
+  height: 40px;
   left: calc(50% - 60px);
   top: -15px;
-  margin: 0;
-  padding: 6px;
-  background-color: var(--bitcoin-green);
+  padding: 1.8vh;
+  background-color: var(--firts-green);
   border-radius: 8px;
   color: var(--just-white);
-}
 
-.plan-card--title {
-  padding-top: 30px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: black;
-}
-
-.plans-container--card .plan-card--price {
-  padding: 5px 0;
-  font-size: 5.3rem;
-  font-weight: bold;
-  line-height: 6.3rem;
-  color: black;
-}
-
-.plans-container--card .plan-card--saving {
-  padding-top: 0;
-}
-
-.plan-card--ca {
-  width: 151px;
-  height: 48px;
-  margin-top: 20px;
-  background: var(--off-white);
-  border: 2px solid var(--bitcoin-green);
-  border-radius: 4px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: var(--blackGreen);
-}
-
-.plan-card--ca span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../assets/icons/orange-right-arrow.svg");
-  vertical-align: text-bottom;
 }
 
 footer {
   display: flex;
   width: 100%;
   height: 150px;
-  background-color: var(--bitcoin-green);
+  background-color: var(--firts-green);
 }
 
 footer section {
@@ -398,6 +389,10 @@ footer section {
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+footer section img {
+  width: 160px;
 }
 
 .left ul {
