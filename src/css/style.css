@@ -36,9 +36,9 @@ header {
 }
 
 header img {
-  width: 40vw;
-  max-width: 45vw;
-  margin-top: 3vh;
+  width: 200px;
+  max-width: 900px;
+  margin-top: 40px;
   align-self: center;
 }
 
@@ -366,7 +366,8 @@ main {
 .lawRose-container--card .recommended {
   display: flex;
   position: absolute;
-  width: 120px;
+  min-width: 120px;
+  max-width: 700px;
   height: 40px;
   left: calc(50% - 60px);
   top: -15px;
@@ -374,7 +375,6 @@ main {
   background-color: var(--firts-green);
   border-radius: 8px;
   color: var(--just-white);
-
 }
 
 footer {
